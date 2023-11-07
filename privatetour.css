@@ -1,0 +1,197 @@
+
+#pt1{
+    background-image: url("images/ttbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    
+}
+.ptf{
+    display: grid;
+    
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    
+
+}
+.tmtrip{
+    background-color: rgb(24, 196, 24);
+    
+    padding: 15px;
+    
+}
+.groups{
+    background-color: green;
+    
+    padding: 15px;
+}
+
+#pt2{
+    background-image: url("images/ttbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+}
+.sdb{
+    display: grid;
+    grid-template-columns: 33.333333% 33.333333% 33.3333333%;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.724);
+    padding: 10px;
+  
+}
+#gs{
+    margin-top: -10px;
+}
+.wrapper2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,12.5rem);
+}
+.gimage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.g1{
+ grid-column: 1/ span 2; 
+
+ 
+}
+.g6{
+    grid-column: 3/span 2;
+}
+.localguiders{
+    display: flex;
+    flex-wrap: wrap;
+   width: 100%;
+    row-gap: 5px;
+}
+.im1,.im2,.im3,.im4,.im5,.im6{
+  width: 33.333333%;
+}
+.im1 img,.im2 img,.im3 img,.im4 img,.im5 img,.im6 img{
+    border-radius: 50%;
+    width: 150px
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+   
+}
+.star {
+    font-size: x-large;
+    width: 50px;
+    display: inline-block;
+    color: gray;
+}
+.star:last-child {
+    margin-right: 0;
+}
+.star:before {
+    content:'\2605';
+}
+.star.on {
+    color: gold;
+}
+.star.half:after {
+    content:'\2605';
+    color: gold;
+    position: absolute;
+    margin-left: -20px;
+    width: 10px;
+    overflow: hidden;
+}
+.eco{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#gt{
+    width: fit-content;
+}
+.quote{
+    background-color: white;
+    padding: 10px;
+}
+#ecotourism{
+    background-color: rgba(169, 149, 149, 0.45);
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.dte{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    height: 30vh;
+align-items: center;
+}
+#bk{
+    background-color: greenyellow;
+
+
+}
+
+
+@media  only screen and (max-width:750px)    
+{
+  .stars{
+    width: fit-content;
+    margin: auto;
+  }
+  .ptf{
+    display: block;
+  }  
+  .tmtrip{
+    margin-bottom: 10px;
+  }
+  .sdb{
+    display: block;
+  }
+  .wrapper2{
+    display: block;
+  }
+  .wrapper2 div{
+    margin-bottom: 10px;
+  }
+  .main{
+    display: block;
+  }
+  .localguiders{
+    
+  
+    margin-bottom: 10px;
+    
+  }
+  .im1,.im2,.im3,.im4,.im5,.im6{
+    width:50%;
+  }
+  .localguiders div{
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  .eco{
+    display: block;
+  }
+  .advisor{
+    margin-bottom: 10px;
+  }
+  .ecotour h6{
+    text-align: center;
+  }
+  .dte{
+    display: block;
+    width: 100%;
+  }
+  .bknw{
+    text-align: center;
+  }
+}

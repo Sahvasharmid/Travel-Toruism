@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+
+
+        body{
+           background-image: url("images/beach-background-tourist-car-vector-90767068.jpg");
+
+           background-repeat: no-repeat;
+           background-size: cover;
+    
+           
+           
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+
+form{
+    display: grid;
+    width: 40%;
+}
+button{
+    width: fit-content;
+}
+form h1
+  {
+    animation: ex 4s  1;
+    position: relative;
+  }
+@keyframes ex{
+    0%   { left:0px; top: -205px;}
+  25%  { left:0px; top:0px;}
+  
+ 
+}
+   </style>
+</head>
+<body>
+   
+    
+        <div class="container-fluid p-0" id="section1">
+            <nav class="navbar  navbar-dark" id="nav" style="background-image: linear-gradient(126deg, white, transparent);">
+               <div class="off">
+                
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">  <span class="navbar-toggler-icon"></span></button> 
+    
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">MENU</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body" >
+                    <ul class="navbar-nav">
+                      <li><a href="home.html">HOME</a></li>
+                      <li><a href="privatetours.html">PRIVATE TOUR PACKAGE</a></li>
+                      <li><a href="tourlist.html">TOURLIST PACKAGE</a></li>
+                      <li><a href="destination.html">DESTINATION</a></li>
+                      <li><a href="singletourpackage.html"></a>SINGLE TOUR PACKAGE</li>
+                    </ul>
+                    </div>
+                  </div>
+              </div>
+              
+                    <a class="navbar-brand" href="#" style="color: black;"><img src="images/ec3.jpg" alt="img"></a>
+                    <div class="git">
+                   <button class="btn btn-light px-2" id="gt" type="submit"><i class="fa fa-phone" style="font-size:18px">&nbsp;  Get in Touch</i></button>
+                   
+                    </div>
+                    
+                   
+           </nav>
+           
+            
+             </div>
+             <div class="form">    
+    <form>
+        <div id="h1">
+        <h1 style="text-align: center;color: green;">BOOK NOW</h1></div>
+        <input type="text" name="txt1" id="text" placeholder="username"><br>
+        <div id="bl"></div>
+        <input type="email" name="email1" id="email" placeholder="email" required><br>
+        <input type="tel" name="telephone" id="tel" placeholder="tel" required><br>
+        <input type="text" name="txt2" id="city" placeholder="enter your city name" required><br>
+        <input type="date" name="dt" id="dt" placeholder="mm/dd/yyyy" required><br>
+        <select  style="margin-bottom: 10px;" id="list" required> 
+            <option hidden value="">no of people</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="1">5+</option>
+        </select>
+
+        <p style="text-align: center;"><button type="submit" class="btn btn-success" id="sub">SUBMIT</button>
+    </form>
+    </div>
+    <script>
+        document.querySelector("#sub").addEventListener("click",(event)=>{
+          event.preventDefault()
+
+    user=document.querySelector("#text").value;
+      email=document.querySelector("#email").value;
+   phn=document.querySelector("#tel").value;
+
+     t=document.querySelector("#city").value;
+ dt=document.querySelector("#dt").value;
+ console.log(dt);
+    var select = document.getElementById('list');
+var value = select.options[select.selectedIndex].value;
+
+//firstname
+if(user==""||user==null)
+{
+  alert("enter name");
+  return
+}
+
+pattern=/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/
+ if(!email.match(pattern))
+{
+alert("enter correct email");
+return
+}
+
+phpattern=/^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/
+
+ if(phn.match(phpattern))
+{
+    alert("enter correct phnno")
+    return
+}
+
+if(value=="")
+{
+    alert("enter a no");
+    return
+}
+
+        }
+        
+       
+);
+ 
+        
+      
+    </script>
+    <script src="getintouch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

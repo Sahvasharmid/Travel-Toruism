@@ -1,0 +1,133 @@
+
+#dest1
+{
+  background-image: url("images/tri.jpg");
+  height:80vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: top-center;
+
+}
+#dest2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#dest3{
+    display: grid;
+    grid-template-columns: 33.33333% 33.33333% 33.3333333%;
+    width: 100%;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+#dest4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#dest5{
+    background-image: url("images/background.jpg");
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ddest5{
+    width: 50%;
+}
+#dest6{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#bckoverlay{
+    background-image: url("images/background.jpg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+#overlay{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+    
+    
+
+}
+.left{
+    background-color: white;
+    height: fit-content;
+    align-self: center;
+    z-index: 9999;
+    position: absolute;
+    width: 50%;
+position: absolute;
+
+padding: 20px;
+
+}
+.right{
+    width: 50%;
+}
+.rr{
+background-image: url("images/beach-background-tourist-car-vector-90767068.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+z-index: 1;
+width: 100%;
+margin-left: 100%;
+}
+.dte{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    height: 20vh;
+align-items: center;
+}
+#bk{
+    background-color: greenyellow;
+
+
+}
+
+@media  only screen and (max-width:489px)
+{
+    .git{
+        width: 100%!important;
+        
+        }
+    #dest1{
+        height: 50vh;
+        background-position: bottom;
+    }
+    #dest3{
+        display: block;
+    }
+    .destimg1,.destimg2,.destimg3{
+        margin-bottom: 10px;
+    }
+    #dest4{
+        display: block;
+    }
+    #ddest5{
+        width: 100%;
+    }
+    #dest6{
+        display: block;
+    }
+    .bknw h2,.bknw h3{
+        text-align: center;
+    }
+    .dte{
+        display: block;
+    }
+    
+}

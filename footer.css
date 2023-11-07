@@ -1,0 +1,46 @@
+.footergrid{
+    display: grid;
+    grid-template-columns: 25% 20% 20% 20% 15%;
+gap: 10px;
+color: white;
+}
+.fg1{
+    padding-right: 10px;
+
+}
+.fg2 h6,.fg3 h6{
+    line-height: 30px;
+}
+.fg2{
+    padding-left: 40px;
+}
+#ftr{
+    background-color: green;
+}
+.fg5 a{
+text-decoration: none;
+color: white;
+}
+@media  only screen and (max-width:750px)    
+{
+.footergrid{
+    display: block;
+  }
+  .fg2{
+    padding-left: 0px;
+  }
+  .dte{
+    height: auto;
+  }
+  .fg3{
+    margin-bottom: 10px;
+  }
+  #pt2{
+    height: auto;
+    padding-top: 50px!important;
+    padding-bottom: 40px!important;
+  }
+  .eco{
+    padding-bottom: 0px!important;
+  }
+}

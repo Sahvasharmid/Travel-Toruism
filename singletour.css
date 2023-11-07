@@ -1,0 +1,10 @@
+#ot1{
+    background-image: url("images/5917_procting.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    color: white;
+    }
